@@ -1,364 +1,40 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="UTF-8">
-<title>Html Basic</title>
+    <meta charset="UTF-8">
+    <title>Apunts HTML Bàsic</title>
 </head>
 <body>
-  <header>
-    <h1>Apunts HTML Basic</h1>
-    <h2>CONTINGUTS</h2>
-      <ol>
-      <li>Introducció a HTML</li>
-      <li>Estructura bàsica d'un document HTML</li>
-      <li>Etiquetes bàsiques</li>
-      <li>Elements HTML i niament</li>
-      <li>Atributs</li>
-      <li>Format de text</li>
-      <li>Comentaris</li>
-      <li>Imatges</li>
-      <li>Enllaços</li>
-      <li>Llistes</li>
-      <li>Taules</li>
-      <li>Creació d'un currículum (CV)</li>
-      <li>Eines d'edició: Notepad++ i Sublime Text</li>
-  </ol>
 
-    <h2>Introducció a HTML</h2>
-
-<p>HTML significa HyperText Markup Language.</p>
-
-<p>És un llenguatge de marques que s'utilitza per crear pàgines web.</p>
-
-<p>HTML permet estructurar el contingut d'una pàgina web mitjançant etiquetes.</p>
-
-<h3>Història d'HTML</h3>
-
-<ul>
-    <li>1991: Tim Berners-Lee crea HTML.</li>
-    <li>1995: apareix HTML 2.0.</li>
-    <li>2014: es publica HTML5.</li>
-</ul>
-  
-  <h2>Estructura bàsica d'un document HTML</h2>
-
-<p>Un document HTML té una estructura bàsica formada per diferents etiquetes.</p>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Títol de la pàgina&lt;/title&gt;
-    &lt;/head&gt;
-
-    &lt;body&gt;
-        Contingut de la pàgina web
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-<h3>Elements principals</h3>
-
-<ul>
-    <li><b>&lt;!DOCTYPE html&gt;:</b> indica que el document utilitza HTML5.</li>
-    <li><b>&lt;html&gt;:</b> element principal del document.</li>
-    <li><b>&lt;head&gt;:</b> conté informació sobre la pàgina.</li>
-    <li><b>&lt;body&gt;:</b> conté el contingut visible de la pàgina.</li>
-</ul>
-  
-  <h2>Etiquetes bàsiques</h2>
-
-<ul>
-    <li><b>&lt;title&gt;:</b> defineix el títol de la pàgina.</li>
-    <li><b>&lt;h1&gt; fins a &lt;h6&gt;:</b> defineixen encapçalaments de diferents nivells.</li>
-    <li><b>&lt;p&gt;:</b> defineix un paràgraf.</li>
-    <li><b>&lt;br&gt;:</b> insereix un salt de línia.</li>
-    <li><b>&amp;nbsp;:</b> insereix un espai en blanc que no es pot separar.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;h1&gt;Títol principal&lt;/h1&gt;
-&lt;h2&gt;Subtítol&lt;/h2&gt;
-&lt;p&gt;Aquest és un paràgraf.&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;Aquest text apareix després d'un salt de línia.&lt;/p&gt;</code></pre>
-
-<h2>Elements HTML</h2>
-
-<p>Un element HTML està format per una etiqueta d'obertura, el contingut i una etiqueta de tancament.</p>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;p&gt;Aquest és un paràgraf.&lt;/p&gt;</code></pre>
-
-<ul>
-    <li><b>Etiqueta d'obertura:</b> &lt;p&gt;</li>
-    <li><b>Contingut:</b> Aquest és un paràgraf.</li>
-    <li><b>Etiqueta de tancament:</b> &lt;/p&gt;</li>
-</ul>
-
-<p>Les etiquetes indiquen al navegador com ha d'interpretar el contingut.</p>
-
-  <h2>Niament d'elements HTML</h2>
-
-<p>El niament consisteix a col·locar elements HTML dins d'altres elements.</p>
-
-<h3>Exemple correcte</h3>
-
-<pre><code>&lt;p&gt;
-    Aquest és un paràgraf amb
-    &lt;strong&gt;text important&lt;/strong&gt;.
-&lt;/p&gt;</code></pre>
-
-<h3>Regla important</h3>
-
-<p>La primera etiqueta que s'obre és l'última que s'ha de tancar.</p>
-
-<p>Les etiquetes s'han de tancar en l'ordre correcte per evitar errors en el document.</p>
-
-  <h2>Atributs HTML</h2>
-
-<p>Els atributs proporcionen informació addicional sobre els elements HTML.</p>
-
-<h3>Atributs principals</h3>
-
-<ul>
-    <li><b>id:</b> identifica un element de manera única.</li>
-    <li><b>class:</b> assigna una classe a un element.</li>
-    <li><b>style:</b> permet aplicar estils directament.</li>
-    <li><b>title:</b> proporciona informació addicional.</li>
-    <li><b>src:</b> indica la ruta d'una imatge o recurs.</li>
-    <li><b>alt:</b> descriu una imatge.</li>
-    <li><b>href:</b> indica la destinació d'un enllaç.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;p id="principal" class="text"&gt;Hola món&lt;/p&gt;
-
-&lt;img src="imatge.jpg" alt="Descripció de la imatge"&gt;
-
-&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
- <h2>Format de text</h2>
-
-<p>HTML disposa de diferents etiquetes per donar format al text.</p>
-
-<ul>
-    <li><b>&lt;b&gt;:</b> mostra el text en negreta.</li>
-    <li><b>&lt;strong&gt;:</b> indica que el text té importància.</li>
-    <li><b>&lt;i&gt;:</b> mostra el text en cursiva.</li>
-    <li><b>&lt;em&gt;:</b> dona èmfasi al text.</li>
-    <li><b>&lt;u&gt;:</b> subratlla el text.</li>
-    <li><b>&lt;strike&gt; o &lt;s&gt;:</b> mostra el text ratllat.</li>
-    <li><b>&lt;sup&gt;:</b> mostra text en superíndex.</li>
-    <li><b>&lt;sub&gt;:</b> mostra text en subíndex.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;b&gt;Negreta&lt;/b&gt;
-&lt;i&gt;Cursiva&lt;/i&gt;
-&lt;u&gt;Subratllat&lt;/u&gt;
-&lt;s&gt;Ratllat&lt;/s&gt;
-H&lt;sub&gt;2&lt;/sub&gt;O
-X&lt;sup&gt;2&lt;/sup&gt;</code></pre>
-  
-  <h2>Comentaris en HTML</h2>
-
-<p>Els comentaris permeten afegir notes dins del codi HTML.</p>
-
-<p>No es mostren visualment a la pàgina web.</p>
-
-<h3>Sintaxi</h3>
-
-<pre><code>&lt;!-- Aquest és un comentari --&gt;</code></pre>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;!-- Títol principal de la pàgina --&gt;
-&lt;h1&gt;Benvinguts&lt;/h1&gt;
-
-&lt;!-- Paràgraf de presentació --&gt;
-&lt;p&gt;Aquesta és la meva pàgina web.&lt;/p&gt;</code></pre>
-
-<p>És recomanable utilitzar comentaris per organitzar i explicar el codi.</p>
-
-  <h2>Imatges en HTML</h2>
-
-<p>Per inserir imatges en una pàgina web s'utilitza l'etiqueta &lt;img&gt;.</p>
-
-<h3>Atributs principals</h3>
-
-<ul>
-    <li><b>src:</b> indica la ubicació de la imatge.</li>
-    <li><b>alt:</b> proporciona una descripció de la imatge.</li>
-    <li><b>width:</b> defineix l'amplada.</li>
-    <li><b>height:</b> defineix l'alçada.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;img src="imatge.jpg"
-     alt="Descripció de la imatge"
-     width="300"
-     height="200"&gt;</code></pre>
-
-<p>L'atribut alt ajuda a millorar l'accessibilitat i el posicionament SEO.</p>
-
-<p>És important ajustar correctament la mida de les imatges.</p>
-
-  <h2>Enllaços en HTML</h2>
-
-<p>Els enllaços permeten navegar entre pàgines web i altres recursos.</p>
-
-<p>Per crear un enllaç s'utilitza l'etiqueta &lt;a&gt; amb l'atribut href.</p>
-
-<h3>Tipus d'URL</h3>
-
-<ul>
-    <li><b>URL absoluta:</b> adreça completa d'una pàgina web.</li>
-    <li><b>URL relativa:</b> ruta d'un recurs dins del mateix lloc web.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;
-
-&lt;a href="contacte.html"&gt;Contacte&lt;/a&gt;</code></pre>
-
-<h3>Obrir en una pestanya nova</h3>
-
-<pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;
-    Obrir Google
-&lt;/a&gt;</code></pre>
-
-<p>Els valors de target poden ser _blank o _self.</p>
-
-<p>És recomanable utilitzar textos descriptius als enllaços.</p>
-
-  <h2>Llistes en HTML</h2>
-
-<p>HTML permet crear diferents tipus de llistes.</p>
-
-<h3>Llistes no ordenades</h3>
-
-<p>S'utilitza l'etiqueta &lt;ul&gt; i cada element es defineix amb &lt;li&gt;.</p>
-
-<pre><code>&lt;ul&gt;
-    &lt;li&gt;Primer element&lt;/li&gt;
-    &lt;li&gt;Segon element&lt;/li&gt;
-    &lt;li&gt;Tercer element&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-
-<h3>Llistes ordenades</h3>
-
-<p>S'utilitza l'etiqueta &lt;ol&gt; i cada element es defineix amb &lt;li&gt;.</p>
-
-<pre><code>&lt;ol&gt;
-    &lt;li&gt;Primer element&lt;/li&gt;
-    &lt;li&gt;Segon element&lt;/li&gt;
-    &lt;li&gt;Tercer element&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-
-  <h2>Tipus de llistes ordenades</h2>
-
-<p>L'atribut type permet modificar el tipus de numeració.</p>
-
-<ul>
-    <li><b>1:</b> números.</li>
-    <li><b>A:</b> lletres majúscules.</li>
-    <li><b>a:</b> lletres minúscules.</li>
-    <li><b>I:</b> números romans majúscules.</li>
-    <li><b>i:</b> números romans minúscules.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;ol type="A"&gt;
-    &lt;li&gt;Primer element&lt;/li&gt;
-    &lt;li&gt;Segon element&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol type="i" start="3"&gt;
-    &lt;li&gt;Tercer element&lt;/li&gt;
-    &lt;li&gt;Quart element&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-
-<p>L'atribut start permet indicar el número pel qual començarà la llista.</p>
-
-  <h2>Taules en HTML</h2>
-
-<p>Les taules permeten organitzar informació en files i columnes.</p>
-
-<h3>Etiquetes principals</h3>
-
-<ul>
-    <li><b>&lt;table&gt;:</b> crea una taula.</li>
-    <li><b>&lt;tr&gt;:</b> crea una fila.</li>
-    <li><b>&lt;td&gt;:</b> crea una cel·la.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;table border="1"&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Nom&lt;/td&gt;
-        &lt;td&gt;Edat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mohamed&lt;/td&gt;
-        &lt;td&gt;20&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-
-  <h2>Atributs de les taules</h2>
-
-<p>Les taules poden utilitzar diferents atributs per modificar-ne l'aparença.</p>
-
-<ul>
-    <li><b>border:</b> defineix la vora de la taula.</li>
-    <li><b>cellpadding:</b> defineix l'espai interior de les cel·les.</li>
-    <li><b>cellspacing:</b> defineix l'espai entre les cel·les.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;table border="1" cellpadding="10" cellspacing="5"&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Nom&lt;/td&gt;
-        &lt;td&gt;Cognom&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mohamed&lt;/td&gt;
-        &lt;td&gt;Mohandi&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-
-  <h2>Organització de les taules</h2>
-
-<p>HTML permet estructurar les taules en diferents seccions.</p>
-
-<ul>
-    <li><b>&lt;thead&gt;:</b> agrupa la capçalera de la taula.</li>
-    <li><b>&lt;tbody&gt;:</b> agrupa el contingut principal.</li>
-    <li><b>&lt;th&gt;:</b> defineix una cel·la de capçalera.</li>
-</ul>
-
-<h3>Exemple</h3>
-
-<pre><code>&lt;table border="1"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Nom&lt;/th&gt;
-            &lt;th&gt;Edat&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Mohamed&lt;/td&gt;
-            &lt;td&gt;20&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-
-<p>És recomanable utilitzar aquestes etiquetes per organitzar millor les dades.</p>
+    <header>
+        <h1>Apunts HTML Bàsic</h1>
+        <h2>Índex de continguts</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Diapositiva2HTMLBasic.html">Diapositiva 2 - Continguts</a></li>
+            <li><a href="Diapositiva3HTMLBasic.html">Diapositiva 3 - Introducció a HTML</a></li>
+            <li><a href="Diapositiva4HTMLBasic.html">Diapositiva 4 - Estructura bàsica d’un document HTML</a></li>
+            <li><a href="Diapositiva5HTMLBasic.html">Diapositiva 5 - Etiquetes bàsiques</a></li>
+            <li><a href="Diapositiva6HTMLBasic.html">Diapositiva 6 - Elements HTML i anidament</a></li>
+            <li><a href="Diapositiva7HTMLBasic.html">Diapositiva 7 - Elements HTML i anidament: elements anidats</a></li>
+            <li><a href="Diapositiva8HTMLBasic.html">Diapositiva 8 - Atributs HTML</a></li>
+            <li><a href="Diapositiva9HTMLBasic.html">Diapositiva 9 - Text formatat</a></li>
+            <li><a href="Diapositiva10HTMLBasic.html">Diapositiva 10 - Comentaris en HTML</a></li>
+            <li><a href="Diapositiva11HTMLBasic.html">Diapositiva 11 - Inserció d’imatges en HTML</a></li>
+            <li><a href="Diapositiva12HTMLBasic.html">Diapositiva 12 - Enllaços en HTML</a></li>
+            <li><a href="Diapositiva13HTMLBasic.html">Diapositiva 13 - Llistes en HTML</a></li>
+            <li><a href="Diapositiva14HTMLBasic.html">Diapositiva 14 - Llistes en HTML: atributs</a></li>
+            <li><a href="Diapositiva15HTMLBasic.html">Diapositiva 15 - Taules bàsiques amb HTML</a></li>
+            <li><a href="Diapositiva16HTMLBasic.html">Diapositiva 16 - Taules bàsiques amb HTML: atributs</a></li>
+            <li><a href="Diapositiva17HTMLBasic.html">Diapositiva 17 - Taules amb HTML: thead, tbody i th</a></li>
+            <li><a href="Diapositiva18HTMLBasic.html">Diapositiva 18 - Taules amb HTML: bones pràctiques</a></li>
+            <li><a href="Diapositiva19HTMLBasic.html">Diapositiva 19 - Tasca: currículum</a></li>
+            <li><a href="Diapositiva20HTMLBasic.html">Diapositiva 20 - Eines inicials: Notepad++</a></li>
+            <li><a href="Diapositiva21HTMLBasic.html">Diapositiva 21 - Eines inicials: Sublime Text</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
